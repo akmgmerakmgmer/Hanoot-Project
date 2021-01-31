@@ -1,0 +1,58 @@
+body,html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.8px;
+  font-family: Montserrat;
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.custom-img-effect{
+  transition: all .3s ease-in-out;
+}
+.custom-img-effect:hover{
+  transform: translateY(5px);
+}
+.sections-padding4{
+  padding-bottom: 50px;
+}
+.sections-padding3{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.sections-padding{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.sections-padding2{
+  padding-top: 10px;
+}
+.default-margin{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.default-margin2{
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.default-button{
+  background-color: #ff4132;
+  border: none;
+  padding: 10px 40px;
+  color: white;
+  transition: 0.3s;
+}
+.default-button:hover{
+  background-color:#ffc100;
+}
+.headings{
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.headings2{
+  margin-bottom: 70px;
+}
+
