@@ -22,12 +22,22 @@
 </template>
 
 <script>
+import $ from 'jquery'
 import Vue from 'vue';
 import VueCarousel from 'vue-carousel';
 Vue.use(VueCarousel);
 export default {
-  beforeMount () {
-    this.getUnits()
+  data(){
+    return{
+      isLoaded:false
+    }
+  },
+  mounted() {
+    document.onreadystatechange=()=>{
+      if(document.readyState=="complete"){
+        $("#spinner").fadeOut(400)
+      }
+    }
   },
   methods: {
     getUnits () {
@@ -72,7 +82,7 @@ export default {
   justify-content: center;
   align-items: center;
   position: fixed;
-  z-index: 5000;
+  z-index: 99999999999999999999999999999999999999999999000;
   background-color: #f0743b;
 }
 
